@@ -1,129 +1,108 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang=pt-BR>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raízes Vivas: Produtos Veganos | Onepage Profissional</title>
-    <link rel="shortcut icon" href="img/icone_aba.png" type="image/x-icon">
-    
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="css/accessibility.css">
-    
-    <a href="#main-content" class="skip-link">Pular para Conteúdo Principal</a>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Raízes Vivas: Produtos Veganos | Onepage Profissional</title>
+<link rel="shortcut icon" href=img/icone_aba.png type=image/x-icon>
+<link rel=stylesheet href=css/styles.css>
+<link rel=stylesheet href=css/mobile.css>
+<link rel=stylesheet href=css/accessibility.css>
+<a href=#main-content class=skip-link>Pular para Conteúdo Principal</a>
 </head>
-<body data-theme="light">
-    
-    <header class="site-header">
-        <div class="logo">
-            <h1><a href="#hero" aria-label="Raízes Vivas - Início">
-                <img src="img/icone_aba.png" width="50px" alt="Logo Raizes Vivas" style="margin-bottom: -10px;"> 
-                Raízes Vivas
-            </a></h1>
-        </div>
-        
-        <button class="menu-toggle" id="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir Menu Principal">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <nav id="main-nav" aria-label="Navegação do site Onepage">
-            <ul>
-                <li><a href="#missao" class="nav-link" accesskey="m">Nossa Missão</a></li>
-                <li><a href="#produtos" class="nav-link">Produtos</a></li>
-                <li><a href="#beneficios" class="nav-link">Benefícios</a></li>
-                <li><a href="#testemunhos" class="nav-link">Testemunhos</a></li>
-                <li><a href="#contato" class="nav-link" accesskey="c">Contato</a></li>
-                <li>
-                    <button id="theme-toggle" aria-pressed="false" aria-label="Alternar modo de cores: claro, escuro ou alto contraste">
-                        Modo Escuro
-                    </button>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main id="main-content">
-        
-        <section id="hero" class="hero" aria-labelledby="hero-heading">
-            <h2 id="hero-heading">Comida Vegana, Escolha Consciente.</h2>
-            <p>Descubra o sabor da natureza em produtos 100% plant-based e sustentáveis.</p>
-            <a href="#produtos" class="cta-button" role="button">Compre Agora</a>
-        </section>
-
-        <section id="missao" class="content-section" aria-labelledby="missao-heading">
-            <h2 id="missao-heading">Nossa Missão: Ética, Saúde e Planeta.</h2>
-            <article>
-                <p>Nós da Raízes Vivas estamos comprometidos em fornecer alimentos deliciosos e nutritivos, enquanto mantemos o mais alto padrão ético. Zero crueldade animal e 100% sustentabilidade, do campo à sua mesa.</p>
-            </article>
-        </section>
-        
-        <section id="produtos" class="product-grid content-section" aria-labelledby="produtos-heading">
-            <h2 id="produtos-heading">Nossa Linha de Produtos</h2>
-            <article class="product-item" aria-label="Hambúrguer de Grão de Bico">
-                <h3>Hambúrguer de Grão de Bico</h3>
-                <img src="img/Hamburguer-vegano-de-grao-de-bico.webp" width="40%" alt="Imagem de um hambúrguer vegano de grão de bico grelhado." loading="lazy">
-                <p>R$ 29,90</p>
-            </article>
-            <article class="product-item" aria-label="Leite Vegetal de Aveia Orgânico">
-                <h3>Leite de Aveia Orgânico</h3>
-                <img src="img/Leite-de-Aveia-Orgânico.webp" width="40%" alt="Caixa de leite vegetal de aveia orgânico." loading="lazy">
-                <p>R$ 18,50</p>
-            </article>
-            </section>
-        
-        <section id="beneficios" class="content-section" aria-labelledby="beneficios-heading">
-            <h2 id="beneficios-heading">Por Que Escolher Raízes Vivas?</h2>
-            <ul>
-                <li>**Nutrição Completa:** Rico em fibras e proteínas vegetais.</li>
-                <li>**Livre de Crueldade:** Certificação Cruelty-Free garantida.</li>
-                <li>**Acessibilidade Web:** Desenvolvido sob as diretrizes WCAG 2.1 AA.</li>
-            </ul>
-        </section>
-        
-        <section id="testemunhos" class="content-section" aria-labelledby="testemunhos-heading">
-            <h2 id="testemunhos-heading">O que Nossos Clientes Dizem</h2>
-            <blockquote cite="https://exemplo.com/feedback-joana" lang="pt-BR">
-                "O hambúrguer de grão de bico é o melhor que já provei! Além disso, a experiência no site é super acessível." 
-                <footer>— Joana S., <time datetime="2025-05-15">15/Maio/2025</time></footer>
-            </blockquote>
-        </section>
-
-        <section id="contato" class="content-section" aria-labelledby="contato-heading">
-            <h2 id="contato-heading">Fale Conosco</h2>
-            
-            <form id="contact-form" action="#" method="POST">
-                <p>Campos marcados com * são obrigatórios.</p>
-                
-                <div class="form-group">
-                    <label for="nome">Nome Completo: *</label>
-                    <input type="text" id="nome" name="nome" autocomplete="name" required aria-required="true" tabindex="0">
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">E-mail: *</label>
-                    <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" tabindex="0">
-                </div>
-                
-                <div class="form-group">
-                    <label for="mensagem">Sua Mensagem: *</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" required aria-required="true" tabindex="0"></textarea>
-                </div>
-                
-                <div id="form-feedback" role="status" aria-live="polite" class="feedback-message" hidden>
-                    </div>
-
-                <button type="submit" tabindex="0">Enviar Mensagem</button>
-            </form>
-        </section>
-
-    </main>
-
-    <footer class="site-footer">
-        <p align="center">&copy; 2024 Raízes Vivas. | Projeto com Padrões WCAG e GitFlow.</p>
-    </footer>
-
-    <script src="js/script.js" defer></script> 
+<body data-theme=light>
+<header class=site-header>
+<div class=logo>
+<h1><a href=#hero aria-label="Raízes Vivas - Início">
+<img src=img/icone_aba.png width=50px alt="Logo Raizes Vivas" style=margin-bottom:-10px>
+Raízes Vivas
+</a></h1>
+</div>
+<button class=menu-toggle id=menu-toggle aria-controls=main-nav aria-expanded=false aria-label="Abrir Menu Principal">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav id=main-nav aria-label="Navegação do site Onepage">
+<ul>
+<li><a href=#missao class=nav-link accesskey=m>Nossa Missão</a></li>
+<li><a href=#produtos class=nav-link>Produtos</a></li>
+<li><a href=#beneficios class=nav-link>Benefícios</a></li>
+<li><a href=#testemunhos class=nav-link>Testemunhos</a></li>
+<li><a href=#contato class=nav-link accesskey=c>Contato</a></li>
+<li>
+<button id=theme-toggle aria-pressed=false aria-label="Alternar modo de cores: claro, escuro ou alto contraste">
+Modo Escuro
+</button>
+</li>
+</ul>
+</nav>
+</header>
+<main id=main-content>
+<section id=hero class=hero aria-labelledby=hero-heading>
+<h2 id=hero-heading>Comida Vegana, Escolha Consciente.</h2>
+<p>Descubra o sabor da natureza em produtos 100% plant-based e sustentáveis.</p>
+<a href=#produtos class=cta-button role=button>Compre Agora</a>
+</section>
+<section id=missao class=content-section aria-labelledby=missao-heading>
+<h2 id=missao-heading>Nossa Missão: Ética, Saúde e Planeta.</h2>
+<article>
+<p>Nós da Raízes Vivas estamos comprometidos em fornecer alimentos deliciosos e nutritivos, enquanto mantemos o mais alto padrão ético. Zero crueldade animal e 100% sustentabilidade, do campo à sua mesa.</p>
+</article>
+</section>
+<section id=produtos class="product-grid content-section" aria-labelledby=produtos-heading>
+<h2 id=produtos-heading>Nossa Linha de Produtos</h2>
+<article class=product-item aria-label="Hambúrguer de Grão de Bico">
+<h3>Hambúrguer de Grão de Bico</h3>
+<img src=img/Hamburguer-vegano-de-grao-de-bico.webp width=40% alt="Imagem de um hambúrguer vegano de grão de bico grelhado." loading=lazy>
+<p>R$ 29,90</p>
+</article>
+<article class=product-item aria-label="Leite Vegetal de Aveia Orgânico">
+<h3>Leite de Aveia Orgânico</h3>
+<img src=img/Leite-de-Aveia-Orgânico.webp width=40% alt="Caixa de leite vegetal de aveia orgânico." loading=lazy>
+<p>R$ 18,50</p>
+</article>
+</section>
+<section id=beneficios class=content-section aria-labelledby=beneficios-heading>
+<h2 id=beneficios-heading>Por Que Escolher Raízes Vivas?</h2>
+<ul>
+<li>**Nutrição Completa:** Rico em fibras e proteínas vegetais.</li>
+<li>**Livre de Crueldade:** Certificação Cruelty-Free garantida.</li>
+<li>**Acessibilidade Web:** Desenvolvido sob as diretrizes WCAG 2.1 AA.</li>
+</ul>
+</section>
+<section id=testemunhos class=content-section aria-labelledby=testemunhos-heading>
+<h2 id=testemunhos-heading>O que Nossos Clientes Dizem</h2>
+<blockquote cite=https://exemplo.com/feedback-joana lang=pt-BR>
+"O hambúrguer de grão de bico é o melhor que já provei! Além disso, a experiência no site é super acessível."
+<footer>— Joana S., <time datetime=2025-05-15>15/Maio/2025</time></footer>
+</blockquote>
+</section>
+<section id=contato class=content-section aria-labelledby=contato-heading>
+<h2 id=contato-heading>Fale Conosco</h2>
+<form id=contact-form action=# method=POST>
+<p>Campos marcados com * são obrigatórios.</p>
+<div class=form-group>
+<label for=nome>Nome Completo: *</label>
+<input id=nome name=nome autocomplete=name required aria-required=true tabindex=0>
+</div>
+<div class=form-group>
+<label for=email>E-mail: *</label>
+<input type=email id=email name=email autocomplete=email required aria-required=true tabindex=0>
+</div>
+<div class=form-group>
+<label for=mensagem>Sua Mensagem: *</label>
+<textarea id=mensagem name=mensagem rows=5 required aria-required=true tabindex=0></textarea>
+</div>
+<div id=form-feedback role=status aria-live=polite class=feedback-message hidden>
+</div>
+<button type=submit tabindex=0>Enviar Mensagem</button>
+</form>
+</section>
+</main>
+<footer class=site-footer>
+<p align=center>&copy; 2024 Raízes Vivas. | Projeto com Padrões WCAG e GitFlow.</p>
+</footer>
+<script src=js/script.js defer></script>
 </body>
 </html>
