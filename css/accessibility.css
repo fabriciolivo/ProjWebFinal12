@@ -1,0 +1,43 @@
+/* Foco Visível Robusto (WCAG 2.1 - 2.4.7) */
+*:focus {
+    outline: none; /* remove o outline padrão */
+    /* Usa a cor secundária (amarelo) para um anel de foco bem visível */
+    box-shadow: 0 0 0 4px var(--color-secondary, #F1C40F); 
+    border-radius: 2px;
+}
+
+/* Aprimoramento do Foco em Botões e Links de Navegação */
+a:focus, button:focus {
+    outline: 3px solid var(--color-secondary, #F1C40F);
+    outline-offset: 4px; /* Afasta o anel do elemento */
+}
+
+/* Acessibilidade para Esconder visualmente (sr-only) */
+.skip-link { 
+    /* Estilos já no style.css, aqui só garante o SR */
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--color-secondary);
+    color: var(--color-text-light);
+    padding: 8px;
+    z-index: 100;
+    /* Adicionar estilo de foco para WCAG 2.4.1 */
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Classe para esconder visualmente, mas manter acessível (Leitores de Tela) */
+.sr-only { 
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
