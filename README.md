@@ -56,8 +56,7 @@ Você só precisa de um navegador web moderno.
 
 1.  **Clone o Repositório:**
     ```bash
-    git clone [Link PÚBLICO do Repositório]
-    cd nome-do-seu-projeto-final
+    git clone https://github.com/fabriciolivo/ProjWebFinal12.git
     ```
 
 2.  **Abra no Navegador:**
@@ -65,6 +64,10 @@ Você só precisa de um navegador web moderno.
 
 ---
 
-## 📜 Licença
+## 🎓 Créditos
 
-Este projeto está licenciado sob a Licença MIT.
+Este projeto foi desenvolvido como requisito da disciplina de **Desenvolvimento WEB**.
+
+* **Desenvolvedor:** Fabricio Gabriel Olivo
+
+* **Disciplina:** Desenvolvimento WEB - Universidade Positivo
